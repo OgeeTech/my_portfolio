@@ -1,6 +1,7 @@
 import React from 'react'
 import { Portfolios } from '../utils/Data'
-import { Link } from 'react-router-dom'
+import { FaExternalLinkAlt, FaGithub, FaCode } from 'react-icons/fa'
+import AnimatedSection from '../utils/AnimationSection'
 import WhatsAppLink from '../utils/WhatsappLink';
 
 function Portfolio() {
@@ -12,30 +13,131 @@ function Portfolio() {
     contactRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
-
   return (
-    <div className='dark:bg-[#252025] dark:text-white md:h-[110vh]' ref={contactRef}>
+    <div className='dark:bg-[#252025] dark:text-white min-h-screen' ref={contactRef}>
+      <section className='px-5 md:px-10 lg:px-24 py-10'>
+        <AnimatedSection animationType='fade'>
+          <div className='text-center mb-12'>
+            <h1 className='text-4xl font-bold mb-4'>My Portfolio</h1>
+            <p className='text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto'>
+              A showcase of my recent projects demonstrating expertise in modern web development, 
+              responsive design, and cutting-edge technologies.
+            </p>
+          </div>
+        </AnimatedSection>
 
-      <section className='px-5 md:px-10 lg:px-24 mt-10 mb-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+          {Portfolios.map((port, index) => (
+            <AnimatedSection key={index} animationType='zoom'>
+              <div className='group relative bg-white dark:bg-[#1b1b1bee] rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2'>
+                {/* Project Image */}
+                <div className='relative overflow-hidden'>
+                  <img 
+                    src={port.image} 
+                    alt={port.name}
+                    className='w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110' 
+                  />
+                  
+                  {/* Hover Overlay */}
+                  <div className='absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                    <div className='flex gap-4'>
+                      <a 
+                        href={port.liveLink} 
+                        target='_blank' 
+                        rel="noopener noreferrer"
+                        className='bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-200 transform hover:scale-105'
+                      >
+                        <FaExternalLinkAlt size={16} />
+                        <span>Live Demo</span>
+                      </a>
+                      <a 
+                        href={port.githubLink} 
+                        target='_blank' 
+                        rel="noopener noreferrer"
+                        className='bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors duration-200 transform hover:scale-105'
+                      >
+                        <FaGithub size={16} />
+                        <span>Code</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-      <section className='flex justify-between gap-5 flex-wrap'>
-    {Portfolios.map((port, index) => (
-        <div className='relative md:w-[30%] shadow-2xl  dark:bg-[#1b1b1bee] rounded-lg cursor-pointer' key={index}>
-            <img src={port.image} alt="" className='rounded-t-lg' />
-            {/* Dark Overlay */}
-            <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg'>
-                <Link to={port.link} target='_blank' className='text-white bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded'>
-                    View Project
-                </Link>
-            </div>
-            <div className='p-5 space-y-4'>
-                <h1 className='uppercase font-semibold'>{port.name}</h1>
-                <p className='leading-8 text-sm'>{port.desc}</p>
-            </div>
+                {/* Project Content */}
+                <div className='p-6'>
+                  <div className='flex items-center gap-2 mb-3'>
+                    <FaCode className='text-blue-600' />
+                    <h2 className='text-xl font-bold text-gray-800 dark:text-white'>
+                      {port.name}
+                    </h2>
+                  </div>
+                  
+                  <p className='text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm'>
+                    {port.desc}
+                  </p>
+                  
+                  {/* Technologies Used */}
+                  <div className='mb-4'>
+                    <h4 className='text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2'>
+                      Technologies:
+                    </h4>
+                    <div className='flex flex-wrap gap-2'>
+                      {port.technologies.map((tech, techIndex) => (
+                        <span 
+                          key={techIndex}
+                          className='bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full text-xs font-medium'
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Project Links - Always Visible on Mobile */}
+                  <div className='flex gap-3 md:hidden'>
+                    <a 
+                      href={port.liveLink} 
+                      target='_blank' 
+                      rel="noopener noreferrer"
+                      className='flex-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-center text-sm transition-colors duration-200'
+                    >
+                      <FaExternalLinkAlt className='inline mr-2' size={14} />
+                      Live Demo
+                    </a>
+                    <a 
+                      href={port.githubLink} 
+                      target='_blank' 
+                      rel="noopener noreferrer"
+                      className='flex-1 bg-gray-800 hover:bg-gray-900 text-white px-3 py-2 rounded text-center text-sm transition-colors duration-200'
+                    >
+                      <FaGithub className='inline mr-2' size={14} />
+                      Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+          ))}
         </div>
-    ))}
-</section>
+
+        {/* Call to Action */}
+        <AnimatedSection animationType='fade'>
+          <div className='text-center mt-16'>
+            <h3 className='text-2xl font-bold mb-4'>Interested in Working Together?</h3>
+            <p className='text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto'>
+              I'm always excited to take on new challenges and collaborate on innovative projects. 
+              Let's discuss how I can help bring your ideas to life.
+            </p>
+            <a 
+              href="/contact" 
+              className='inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 transform hover:scale-105'
+            >
+              Get In Touch
+            </a>
+          </div>
+        </AnimatedSection>
       </section>
+      
       <WhatsAppLink />
     </div>
   )

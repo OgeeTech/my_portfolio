@@ -58,36 +58,48 @@ export const Portfolios = [
         image: Grantty,
         name: "Grantty",
         desc: "A comprehensive platform designed to help small businesses discover and apply for grants, making funding more accessible to entrepreneurs and startups. Built with React and modern UI/UX principles.",
-        link: "https://grantty.com/"
+        liveLink: "https://grantty.com/",
+        githubLink: "https://github.com/OgeeTech/grantty-frontend",
+        technologies: ["React", "TypeScript", "Tailwind CSS", "API Integration"]
     },    
     {
         image: Music,
         name: "Musician Portfolio",
         desc: "A responsive portfolio website for showcasing music, albums, and artist profiles. Built with React and optimized for performance with modern web technologies and SEO best practices.",
-        link: "https://youngboyjarred.netlify.app/"
+        liveLink: "https://youngboyjarred.netlify.app/",
+        githubLink: "https://github.com/OgeeTech/musician-portfolio",
+        technologies: ["React", "CSS3", "Responsive Design", "Performance Optimization"]
     },    
     {
         image: veeKite,
         name: "Veekite Engineering",
         desc: "A modern corporate website built for Veekite, an engineering company based in Nigeria. Features responsive design, interactive elements, and showcases their services and expertise in engineering solutions.",
-        link: "https://www.veekites.com/"
+        liveLink: "https://www.veekites.com/",
+        githubLink: "https://github.com/OgeeTech/veekite-engineering",
+        technologies: ["React", "Next.js", "Tailwind CSS", "Framer Motion"]
     },    
     {
         image: Easy,
         name: "Easy Learning Platform",
         desc: "An online educational platform built with React and Next.js, making education accessible and affordable globally. Features interactive learning modules, progress tracking, and responsive design.",
-        link: "https://learn2024.netlify.app/"
+        liveLink: "https://learn2024.netlify.app/",
+        githubLink: "https://github.com/OgeeTech/easy-learning-platform",
+        technologies: ["React", "Next.js", "Firebase", "Progressive Web App"]
     },
     {
         image: Artica,
         name: "Artica - Web3 Art Platform",
         desc: "A Web3 art marketplace built with React and blockchain integration, showcasing African cultures and art. Features NFT integration, modern animations, and decentralized technology implementation.",
-         link: "https://artica-explore.netlify.app/"
+        liveLink: "https://artica-explore.netlify.app/",
+        githubLink: "https://github.com/OgeeTech/artica-web3-platform",
+        technologies: ["React", "Web3", "Blockchain", "NFT Integration", "Framer Motion"]
     },
     {
         image: Fit,
         name: "GetFit - Fitness Platform",
         desc: "A modern fitness and gym website template built with React. Features responsive design, interactive components, and optimized performance for fitness businesses and personal trainers.",
-         link: "https://get-fitted.netlify.app/"
+        liveLink: "https://get-fitted.netlify.app/",
+        githubLink: "https://github.com/OgeeTech/getfit-fitness-platform",
+        technologies: ["React", "CSS3", "Responsive Design", "Interactive Components"]
     }
 ]
