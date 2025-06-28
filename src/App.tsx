@@ -6,9 +6,9 @@ import { Route, Routes } from 'react-router-dom';
 import AboutMe from './Components/AboutMe';
 import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
+import Blog from './Components/Blog';
+import BlogPost from './Components/BlogPost';
 import MobileNav from './MobileNav';
-
-
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
         <Route path='/' element={ <HomeComponent />} />
         <Route path='/about' element={ <AboutMe />} />
         <Route path='/portfolio' element={ <Portfolio />} />  
+        <Route path='/blog' element={ <Blog />} />
+        <Route path='/blog/:slug' element={ <BlogPost />} />
         <Route path='/contact' element={ <Contact />} />
       </Routes>
     </div>

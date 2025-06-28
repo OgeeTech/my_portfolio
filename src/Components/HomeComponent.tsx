@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../Image/pic2-removebg-preview.png'
+import Profile from '../Image/OG PROFILE.jpg'
 import AnimatedSection from '../utils/AnimationSection'
 import WordCycler from '../utils/WordCycler'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -56,7 +56,7 @@ function HomeComponent() {
             <motion.div      variants={animationVariants}
             initial="left"
             animate={['left', 'right']} >
-            <img src={Profile} className='object-contain ' alt="profile" />  
+            <img src={Profile} className='object-contain w-full max-w-md rounded-2xl shadow-2xl' alt="Wada Gift - Frontend Engineer" />  
             </motion.div>
             </AnimatedSection>
 

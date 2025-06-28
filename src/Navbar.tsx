@@ -39,6 +39,7 @@ function Navbar() {
           <NavLink to="/" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")}>Home</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")}>About</NavLink>
           <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")}>Portfolio</NavLink>
+          <NavLink to="/blog" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")}>Blog</NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")}>Contact</NavLink>
           <div className="toggle-container cursor-pointer" onClick={toggleDarkMode}>
             <div className={`toggle-icon ${darkMode ? 'dark' : 'light'}`}>

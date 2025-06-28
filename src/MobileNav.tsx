@@ -72,6 +72,7 @@ function MobileNav() {
     <NavLink to="/" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")} onClick={toggleMenu}>Home</NavLink>
 <NavLink to="/about" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")} onClick={toggleMenu}>About</NavLink>
 <NavLink to="/portfolio" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")} onClick={toggleMenu}>Portfolio</NavLink>
+<NavLink to="/blog" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")} onClick={toggleMenu}>Blog</NavLink>
 <NavLink to="/contact" className={({ isActive }) => (isActive ? "text-[#338f89]" : "")} onClick={toggleMenu}>Contact</NavLink>
     </div>
     </motion.div>
