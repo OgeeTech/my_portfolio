@@ -32,7 +32,7 @@ function Navbar() {
       <div className='flex justify-between items-center px-5 lg:px-24 py-3'>
         <div className='self-center flex gap-2'>
         <p className='w-[8%] lg:w-[5%] rounded-full'><img src={Spider} alt="" className='rounded-full' /></p>  
-          <h1 className='font-poppin font-semibold self-center'> {"< Amiola_Dev />"}</h1>
+          <h1 className='font-poppin font-semibold self-center'> {"< WadaGift_Dev />"}</h1>
         </div>
 
         <div className='font-poppin flex justify-around gap-5'>
@@ -52,5 +52,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

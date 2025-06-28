@@ -1,27 +1,113 @@
-# Portfolio Summary
+# Wada Gift - Frontend Engineer Portfolio
 
-Welcome to my portfolio! This collection of projects and work samples reflects my skills, experience, and passion in the world of Technology. Over the years, I've had the opportunity to work on a diverse range of projects and collaborate with various teams, allowing me to grow and expand my expertise.
+Welcome to my professional portfolio! This showcase reflects my expertise, experience, and passion as a Frontend Engineer with over 3 years of experience in building high-performance web applications.
 
-# What to Expect
+## About Me
 
-In this portfolio, you'll find a selection of projects that showcase my ability to program, writew good and scalabe code. Including
+I am a frontend web engineer proficient in React and Next.js, consistently delivering visually appealing and high-performance web and mobile applications. My focus is on writing efficient, maintainable code while ensuring exceptional user experiences.
 
-E-commerce page : it is an E-commerce page built with the latest technologies. It has a shopping, about, price and contact page.
+## Technical Expertise
 
-Artica : Artica is a project i really love as it is to help bring out African cultures and art to the world. It has a great UI background and great animations. 
+### Core Technologies
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), TypeScript
+- **Frameworks & Libraries**: React.js, Next.js, React Native
+- **Styling**: Tailwind CSS, CSS-in-JS, Responsive Design
+- **State Management**: Redux, Context API
+- **Testing**: Jest, React Testing Library
+- **Tools & Platforms**: Git/GitHub, Firebase, GraphQL, Chart.js
 
-Dictionary : It is a web dictionary built with latest technologies and Rest APIs.
+### Development Skills
+- Full Software Development Lifecycle (SDLC)
+- Agile Methodologies
+- API Integration (RESTful APIs)
+- Performance Optimization
+- Cross-browser Compatibility
+- Mobile-first Responsive Design
+- Deployment (Vercel, Netlify, Heroku)
 
-# Technologies and Tools
+## Professional Experience
 
-Throughout these projects, I've leveraged a wide array of technologies and tools, such as [list key technologies, e.g.,  JavaScript, React, Css, Framer, Material ui, TypeScript]. This diversity in skills and tools allows me to adapt and thrive in various project environments.
+### Software Engineer - TroopsAfrica (2024 - Present)
+*Remote Contract Position*
+- Built sophisticated internal dashboards for real-time analytics
+- Designed user interfaces for transaction tracking and analysis
+- Integrated backend APIs for seamless data synchronization
+- Enhanced system reliability and analytics framework
 
-# My passion
+### Frontend Engineer - BigStack Technologies (2021 - 2024)
+*Nigeria - Onsite Intern*
+- Led frontend development for high-traffic e-commerce platform
+- Collaborated with internal teams and external vendors
+- Achieved 18% increase in subscriber growth through UI/UX improvements
+- Implemented modern design principles and usability testing
 
-I'm deeply passionate about Blockchain technologies and decentralised technology, e.g., creating innovative user experiences, solving complex problems, or telling compelling stories through data. Every project here reflects my commitment to excellence and my drive to constantly learn and improve.
+## Education
 
-# Contact 
+**University of Calabar** - B.Sc. in Computer Science (2018-2023)
+- Specialized in software development, data structures, and algorithms
+- Focused on web development and application design projects
 
-I'm always excited to connect with fellow enthusiasts and potential collaborators. If you'd like to reach out, share feedback, or discuss potential opportunities, please feel free to contact me at [amiolademilade@gmail.com] or connect with me on [Twitter: emmanuel_amiola,  Linkeldn: Amiola Demilade].
+**Altschool Africa** - Diploma in Backend Engineering (Expected 2025)
+- Advanced coursework in server-side development and database management
+- Practical projects bridging backend systems with frontend interfaces
 
-Thank you for visiting my portfolio. I hope you find it inspiring and informative, and I look forward to potential collaborations and exciting new projects in the future.
+## Featured Projects
+
+This portfolio showcases a diverse range of projects including:
+- **E-commerce Platforms**: High-performance online shopping experiences
+- **Educational Platforms**: Accessible learning management systems
+- **Web3 Applications**: Blockchain-integrated art marketplaces
+- **Corporate Websites**: Professional business solutions
+- **Portfolio Sites**: Creative showcases for artists and professionals
+
+## Technologies Used in This Portfolio
+
+- **Frontend**: React.js with TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Routing**: React Router
+- **Icons**: React Icons
+- **Build Tool**: Create React App
+- **Deployment**: Netlify/Vercel
+
+## Contact Information
+
+I'm always excited to collaborate on innovative projects and discuss new opportunities.
+
+- **Email**: wgift41@gmail.com
+- **LinkedIn**: [Wada Gift](https://www.linkedin.com/in/wada-gift-b62967164)
+- **GitHub**: [OgeeTech](https://github.com/OgeeTech)
+
+## Getting Started
+
+To run this portfolio locally:
+
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
+# Build for production
+npm run build
+```
+
+## Commitment to Excellence
+
+I am deeply committed to:
+- Writing clean, maintainable code
+- Following industry best practices
+- Continuous learning and skill development
+- Delivering projects on time and within scope
+- Creating exceptional user experiences
+- Collaborating effectively in team environments
+
+Thank you for visiting my portfolio. I look forward to potential collaborations and exciting new projects that push the boundaries of web development.
+
+---
+
+*This portfolio demonstrates my technical skills, professional experience, and commitment to excellence in frontend engineering.*

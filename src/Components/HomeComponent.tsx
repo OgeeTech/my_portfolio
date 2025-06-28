@@ -2,8 +2,8 @@ import React from 'react'
 import Profile from '../Image/pic2-removebg-preview.png'
 import AnimatedSection from '../utils/AnimationSection'
 import WordCycler from '../utils/WordCycler'
-import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
-import { SiX } from 'react-icons/si';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 import { motion } from 'framer-motion'
 import WhatsAppLink from '../utils/WhatsappLink';
 
@@ -18,7 +18,7 @@ function HomeComponent() {
   }, []);
 
 
-    const words = ['Frontend Developer', 'Mobile Developer', 'Backend Developer'];
+    const words = ['Frontend Engineer', 'React Developer', 'Next.js Specialist', 'UI/UX Developer'];
     const duration = 3000;
 
     const animationVariants = {
@@ -70,21 +70,18 @@ function HomeComponent() {
             <WordCycler words={words} duration={duration} />
           </div>
              
-<p className='font-semibold'>Results-Driven Full Stack Web & Mobile Developer</p>
-<p>I specialize in building and managing websites, web applications, and mobile applications that drive product success. With expertise in both backend and frontend development, I deliver robust solutions that enhance user experience and optimize performance across all platforms.</p>
+<p className='font-semibold'>Experienced Frontend Engineer with 3+ Years of Expertise</p>
+<p>I am a frontend web engineer with over 3 years of experience, proficient in React and Next.js. I consistently deliver high-performance, visually appealing web and mobile applications, focusing on efficient, maintainable code. My expertise spans the entire software development lifecycle, including coding, debugging, testing, and deployment.</p>
 
                     <div className="flex space-x-4 dark:text-white mt-5">
-      <a href="https://github.com/feranmiba" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/OgeeTech" target="_blank" rel="noopener noreferrer">
         <FaGithub className="text-gray-700 hover:text-black dark:text-white" size={20} />
       </a>
-      <a href="https://web.facebook.com/amiola.emmanuel.5" target="_blank" rel="noopener noreferrer">
-        <FaFacebook className="text-gray-700 hover:text-blue-600 dark:text-white" size={20} />
-      </a>
-      <a href="https://www.linkedin.com/in/amiola-demilade-5a46801a8/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/wada-gift-b62967164" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className="text-gray-700 hover:text-blue-700 dark:text-white" size={20} />
       </a>
-      <a href="https://x.com/emmanuel_amiola" target="_blank" rel="noopener noreferrer">
-        <SiX className="text-gray-700 hover:text-blue-400 dark:text-white" size={20} />
+      <a href="mailto:wgift41@gmail.com" target="_blank" rel="noopener noreferrer">
+        <SiGmail className="text-gray-700 hover:text-red-600 dark:text-white" size={20} />
       </a>
     </div>
 

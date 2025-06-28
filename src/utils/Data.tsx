@@ -1,5 +1,5 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from 'react-icons/fa';
-import { SiTypescript, SiReact, SiReactrouter, SiFramer, SiPostgresql, SiMongodb, SiNextdotjs, SiAdonisjs } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiTypescript, SiReactrouter, SiFramer, SiPostgresql, SiMongodb, SiNextdotjs, SiTailwindcss, SiRedux, SiJest, SiFirebase, SiGraphql } from 'react-icons/si';
 import Easy from '../Image/easyLearning.png'
 import Artica from '../Image/artica.png'
 import Fit from '../Image/getFit.png'
@@ -8,68 +8,46 @@ import Grantty from '../Image/grantty.png';
 import veeKite from '../Image/veekite.png';
 
 export const techIcons = [
-  { name: 'HTML', icon: <FaHtml5 size={40} /> },
-  { name: 'CSS', icon: <FaCss3Alt size={40} /> },
-  { name: 'JavaScript', icon: <FaJs size={40} /> },
-  { name: 'TypeScript', icon: <SiTypescript size={40} /> },
-  { name: 'React', icon: <SiReact size={40} /> },
-  { name: 'React Native', icon: <SiReactrouter size={40} /> }, // Placeholder icon
-  { name: 'Framer Motion', icon: <SiFramer size={40} /> },
-  { name: 'Next.js', icon: <SiNextdotjs size={40} /> }, // Using SiNextdotjs
-  { name: 'Node.js', icon: <FaNodeJs size={40} /> },
-  { name: 'PostgreSQL', icon: <SiPostgresql size={40} /> },
-  { name: 'MongoDB', icon: <SiMongodb size={40} /> },
-  { name: 'AdoniJs', icon: <SiAdonisjs size={40} /> },
+  { name: 'HTML5', icon: <FaHtml5 size={40} color="#E34F26" /> },
+  { name: 'CSS3', icon: <FaCss3Alt size={40} color="#1572B6" /> },
+  { name: 'JavaScript', icon: <FaJs size={40} color="#F7DF1E" /> },
+  { name: 'TypeScript', icon: <SiTypescript size={40} color="#3178C6" /> },
+  { name: 'React', icon: <FaReact size={40} color="#61DAFB" /> },
+  { name: 'Next.js', icon: <SiNextdotjs size={40} /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss size={40} color="#06B6D4" /> },
+  { name: 'Redux', icon: <SiRedux size={40} color="#764ABC" /> },
+  { name: 'Firebase', icon: <SiFirebase size={40} color="#FFCA28" /> },
+  { name: 'GraphQL', icon: <SiGraphql size={40} color="#E10098" /> },
+  { name: 'Jest', icon: <SiJest size={40} color="#C21325" /> },
+  { name: 'Node.js', icon: <FaNodeJs size={40} color="#339933" /> },
 ];
 
 
 export const Experience = [
     {
-        role: "Frontend Developer Intern",
-        company: "Web3bridge",
-        time: "June 2024 - current",
-        responsibilities: [
-            "Assisted in developing responsive web applications using Javascript, Nextjs and Typescript",
-            "Collaborated with designers to implement user-friendly interfaces and improve UX.",
-            "Participated in code reviews and contributed to team knowledge sharing.",
-            "Maintained and updated existing applications to enhance performance and usability.",
-            "Learned and utilized frameworks like React to build dynamic web components.",
-            "Engaged in team meetings to discuss project progress and propose enhancements.",
-            "Collaborated with backend developers and implented the created APIs to the frontend."
-        ]
-    },
-    {
         role: "Frontend Engineer",
-        company: "SphiderAssWeb",
-        time: "Feb 2025 - current",
+        company: "BigStack Technologies",
+        time: "2021 – 2024",
+        location: "Nigeria (Onsite Intern)",
         responsibilities: [
-            "Developing and maintaining web applications using modern frameworks and technologies.",
-            "Collaborating with cross-functional teams to create user-friendly and efficient applications.",
-            "Integrating RESTful APIs for seamless communication between frontend and backend services.",
-            "Conducting code reviews, implementing testing strategies, and ensuring high-quality code standards.",
-            "Ensuring applications are responsive and perform well across a variety of devices and screen sizes.",
-            "Using version control systems (like Git) for tracking changes and collaborating on code.",
-            "Analyzing and improving application performance, addressing bottlenecks and enhancing user experience.",
-            "Continuously researching and implementing emerging technologies and best practices in web  development.",
-            "Identifying and fixing bugs, performance issues, and other technical challenges."
+            "Led collaboration efforts between internal teams and external vendors, ensuring efficient delivery of product improvements, bug fixes, and feature enhancements that aligned with business objectives.",
+            "Took ownership of the frontend development for a high-traffic e-commerce platform, integrating backend APIs to facilitate smooth data flow, enhance user interactions, and optimize performance using React.js.",
+            "Drove a comprehensive overhaul of the company website's user interface and experience, applying modern design principles and conducting usability testing, which resulted in an 18% increase in subscriber growth and improved overall user engagement.",
+            "Collaborated with cross-functional teams to implement responsive design principles, ensuring optimal user experience across all devices and screen sizes.",
+            "Implemented state management solutions using Redux and Context API to maintain application performance and scalability."
         ]
-        
     },
     {
-        role: "Fullstack Web & Mobile Developer",
-        company: "Ullweb",
-        time: "June 2024 - June 2025",
+        role: "Software Engineer",
+        company: "TroopsAfrica",
+        time: "2024 – Present",
+        location: "Remote (Contract)",
         responsibilities: [
-            "Developing and maintaining web and mobile applications using modern frameworks and technologies.",
-            "Collaborating with cross-functional teams to create user-friendly and efficient applications.",
-            "Creating and integrating RESTful APIs for seamless communication between frontend and backend services.",
-            "Designing and managing databases, ensuring data integrity and security, and optimizing query performance.",
-            "Conducting code reviews, implementing testing strategies, and ensuring high-quality code standards.",
-            "Ensuring applications are responsive and perform well across a variety of devices and screen sizes.",
-            "Using version control systems (like Git) for tracking changes and collaborating on code.",
-            "Analyzing and improving application performance, addressing bottlenecks and enhancing user experience.",
-            "Continuously researching and implementing emerging technologies and best practices in web and mobile development.",
-            "Identifying and fixing bugs, performance issues, and other technical challenges."
+            "Collaborated remotely with a cross-functional team to build a sophisticated internal dashboard for real-time analytics, streamlining application performance monitoring and operational stability.",
+            "Designed and implemented a user interface for tracking and analyzing user transaction histories, improving data accessibility and enhancing internal decision-making processes.",
+            "Integrated backend APIs to ensure seamless data synchronization and accurate transaction visualization, strengthening system reliability and improving the overall analytics framework.",
+            "Utilized modern frontend technologies including React.js and Next.js to deliver high-performance, scalable web applications.",
+            "Implemented comprehensive testing strategies using Jest to ensure code quality and reliability across all features."
         ]
         
     }
@@ -79,37 +57,37 @@ export const Portfolios = [
     {
         image: Grantty,
         name: "Grantty",
-        desc: "A platform designed to help small businesses discover and apply for grants, making funding more accessible to entrepreneurs and startups.",
+        desc: "A comprehensive platform designed to help small businesses discover and apply for grants, making funding more accessible to entrepreneurs and startups. Built with React and modern UI/UX principles.",
         link: "https://grantty.com/"
     },    
     {
         image: Music,
         name: "Musician Portfolio",
-        desc: "A responsive portfolio website for showcasing music, albums, and artist profiles. Built with modern web technologies and optimized for performance.",
+        desc: "A responsive portfolio website for showcasing music, albums, and artist profiles. Built with React and optimized for performance with modern web technologies and SEO best practices.",
         link: "https://youngboyjarred.netlify.app/"
     },    
     {
         image: veeKite,
-        name: "Veekite",
-        desc: "A modern website built for Veekite, an engineering company based in Nigeria, showcasing their services, projects, and expertise in delivering innovative engineering solutions.",
+        name: "Veekite Engineering",
+        desc: "A modern corporate website built for Veekite, an engineering company based in Nigeria. Features responsive design, interactive elements, and showcases their services and expertise in engineering solutions.",
         link: "https://www.veekites.com/"
     },    
     {
         image: Easy,
-        name: "Easy learning",
-        desc: "Easy learning is an online platform which allows education to be accessible and affordable to everyone regardless of their geographical area. This is a website created with the vision of helping everyone learn any subject all round the world.",
+        name: "Easy Learning Platform",
+        desc: "An online educational platform built with React and Next.js, making education accessible and affordable globally. Features interactive learning modules, progress tracking, and responsive design.",
         link: "https://learn2024.netlify.app/"
     },
     {
         image: Artica,
-        name: "artica",
-        desc: "Artica is web3 art website which is built with the vison exposing African cultures to the world using blockchain technologies. This software appreciates African artefacts and endeavors to bring it to limelight with the exposition of the blockchain technology.",
+        name: "Artica - Web3 Art Platform",
+        desc: "A Web3 art marketplace built with React and blockchain integration, showcasing African cultures and art. Features NFT integration, modern animations, and decentralized technology implementation.",
          link: "https://artica-explore.netlify.app/"
     },
     {
         image: Fit,
-        name: "get-fit",
-        desc: "Get fit is a free template which i built for fittness and gym business. It is a website which givs tips on how to improve ones body and also keeping fit.",
+        name: "GetFit - Fitness Platform",
+        desc: "A modern fitness and gym website template built with React. Features responsive design, interactive components, and optimized performance for fitness businesses and personal trainers.",
          link: "https://get-fitted.netlify.app/"
     }
 ]
