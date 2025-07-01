@@ -20,8 +20,7 @@ function Portfolio() {
           <div className='text-center mb-12'>
             <h1 className='text-4xl font-bold mb-4'>My Portfolio</h1>
             <p className='text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto'>
-              A showcase of my recent projects demonstrating expertise in modern web development, 
-              responsive design, and cutting-edge technologies.
+              Recent projects showcasing expertise in modern web development and responsive design.
             </p>
           </div>
         </AnimatedSection>
@@ -72,17 +71,14 @@ function Portfolio() {
                     </h2>
                   </div>
                   
-                  <p className='text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm'>
+                  <p className='text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm line-clamp-3'>
                     {port.desc}
                   </p>
                   
                   {/* Technologies Used */}
                   <div className='mb-4'>
-                    <h4 className='text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2'>
-                      Technologies:
-                    </h4>
                     <div className='flex flex-wrap gap-2'>
-                      {port.technologies.map((tech, techIndex) => (
+                      {port.technologies.slice(0, 3).map((tech, techIndex) => (
                         <span 
                           key={techIndex}
                           className='bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full text-xs font-medium'
@@ -123,10 +119,9 @@ function Portfolio() {
         {/* Call to Action */}
         <AnimatedSection animationType='fade'>
           <div className='text-center mt-16'>
-            <h3 className='text-2xl font-bold mb-4'>Interested in Working Together?</h3>
+            <h3 className='text-2xl font-bold mb-4'>Ready to Work Together?</h3>
             <p className='text-gray-600 dark:text-gray-300 mb-6 max-w-xl mx-auto'>
-              I'm always excited to take on new challenges and collaborate on innovative projects. 
-              Let's discuss how I can help bring your ideas to life.
+              Let's discuss how I can help bring your ideas to life with modern web technologies.
             </p>
             <a 
               href="/contact" 

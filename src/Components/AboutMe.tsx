@@ -27,12 +27,9 @@ function AboutMe() {
         <section className='text-start space-y-5 px-5 md:px-10 lg:px-24 py-10'>
         <h1 className='font-bold text-xl'> About Me</h1>  
 
-        <p className='leading-10'>I am a frontend web engineer with over 3 years of experience, proficient in React and Next.js. I consistently deliver high-performance, visually appealing web and mobile applications, focusing on efficient, maintainable code. My expertise spans the entire software development lifecycle, including coding, debugging, testing, and deployment.
+        <p className='leading-8'>Frontend engineer with 3+ years of experience specializing in React and Next.js. I build high-performance, scalable web applications with a focus on clean code and exceptional user experiences. Committed to agile methodologies and delivering projects on time.</p>
 
-        I am deeply committed to agile methodologies, ensuring that projects are delivered on time and meet both functional and aesthetic requirements. My attention to detail and problem-solving abilities have helped me build scalable and reliable solutions that enhance user experiences.
-        </p>
-
-        <h1 className='font-bold text-xl'>Technologies & Skills</h1> 
+        <h1 className='font-bold text-xl'>Core Technologies</h1> 
 
         <div className='flex  flex-wrap gap-5 md:gap-5'>
             {techIcons.map((tech, index) => (
@@ -49,7 +46,7 @@ function AboutMe() {
         <div className='mt-8'>
           <h2 className='font-bold text-lg mb-4'>Additional Skills</h2>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
-            {['Chart.js', 'Java', 'Firebase', 'GraphQL', 'Redux', 'Context API', 'Jest', 'Vercel', 'Netlify', 'Heroku', 'RESTful APIs', 'Agile Methodologies'].map((skill, index) => (
+            {['Chart.js', 'Firebase', 'GraphQL', 'Redux', 'Jest', 'Vercel', 'Netlify', 'RESTful APIs'].map((skill, index) => (
               <AnimatedSection key={index} animationType='fade'>
                 <div className='bg-gray-100 dark:bg-[#130e] px-3 py-2 rounded-lg text-sm text-center shadow-md'>
                   {skill}
@@ -86,7 +83,7 @@ function AboutMe() {
             transition={{ duration: 0.3 }}>
         <p>Key Achievements & Responsibilities</p>
         <ul className='list-disc pl-5 text-sm '>
-              {exp.responsibilities.map((res, resIndex) =>(<li key={resIndex} className='mt-4'>{res}</li>))}
+              {exp.responsibilities.slice(0, 3).map((res, resIndex) =>(<li key={resIndex} className='mt-4'>{res}</li>))}
         </ul>
             </motion.div>
    
@@ -108,7 +105,6 @@ function AboutMe() {
                 <h2 className='font-bold'>University of Calabar</h2>
                 <p className='font-semibold'>B.Sc. in Computer Science</p>
                 <p className='text-sm text-gray-600 dark:text-gray-400'>2018 – 2023</p>
-                <p className='mt-2 text-sm'>Completed coursework in software development, data structures, algorithms, and database management. Engaged in projects focusing on web development and application design.</p>
               </div>
             </AnimatedSection>
             
@@ -117,7 +113,6 @@ function AboutMe() {
                 <h2 className='font-bold'>Altschool Africa</h2>
                 <p className='font-semibold'>Diploma in Backend Engineering</p>
                 <p className='text-sm text-gray-600 dark:text-gray-400'>Expected 2025</p>
-                <p className='mt-2 text-sm'>Coursework in server-side development, databases, and APIs. Participated in practical projects bridging backend systems with frontend interfaces.</p>
               </div>
             </AnimatedSection>
           </div>
